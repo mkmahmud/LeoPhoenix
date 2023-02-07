@@ -1,0 +1,29 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 16px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .circle-custom {
+    @apply mx-auto -mt-[30px]  h-64 w-64 border border-[3px] rounded-full overflow-hidden flex items-center justify-center;
+  }
+
+  .circle-custom-mobile{
+    @apply mx-auto my-10 h-64 w-64 border border-[3px] rounded-full overflow-hidden flex items-center justify-center;
+  }

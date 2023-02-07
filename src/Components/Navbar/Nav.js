@@ -27,7 +27,7 @@ const Nav = () => {
                     }
                 </div>
             </div>
-            <div className={`menus w-full  absolute py-5 -z-10 ${!mobileMenu && '-translate-y-[400px] ease-[cubic-bezier(0.95,0.05,0.795,0.035)]' } md:static md:-translate-y-[0px] md:w-1/2`}>
+            <div className={`menus w-full bg-white md:bg-transparent absolute py-5 z-10 ${!mobileMenu && '-translate-y-[500px] ease-[cubic-bezier(0.95,0.05,0.795,0.035)]' } md:static md:-translate-y-[0px] md:w-1/2`}>
                 <ul className='md:flex justify-between items-center text-base font-bold space-y-4 md:space-y-0  md:space-x-4 '>
                     <li> <Link to='#'>Home</Link></li>
                     <li> <Link to='#'>About</Link></li>
