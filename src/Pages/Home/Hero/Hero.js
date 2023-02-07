@@ -17,10 +17,10 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Hero = () => {
     return (
-        <div className='h-[90vh] text-white md:flex justify-around md:py-5' style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundPosition: 'center', fontFamily: `'Poppins', sans-serif` }}>
+        <div className='h-full  text-white md:flex justify-around items-center md:py-5' style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', backgroundPosition: 'center', fontFamily: `'Poppins', sans-serif`, paddingBottom:'15%' }}>
             <div className='h-[300px] mx-2 md:w-2/3 rounded-xl text-left py-4 px-2 md:py-10 md:px-6 md:mx-6 md:h-[500px] ' style={{ backgroundImage: `url(${heroImages})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                <h2 className='text-3xl font-bold py-4'>Grow Your <br /> Buisness To The <br /> Peak.</h2>
-                <p className='leading-none'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <h2 className='text-3xl font-bold md:py-4'>Grow Your <br /> Buisness To The <br /> Peak.</h2>
+                <p className='leading-none md:my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div className='my-6'>
                     <MainButton content='Learn More'></MainButton>
                     <SecondButton content='Contact Us'></SecondButton>
