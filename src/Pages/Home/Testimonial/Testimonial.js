@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 import quotaion from '../../../Assets/icons/Quotations.png';
-import { FaAngleDoubleRight, FaAngleRight } from 'react-icons/fa';
 import './Testimonial.css';
 import profile from '../../../Assets/icons/profile.png';
 // Import Swiper React components
@@ -15,6 +13,7 @@ import "swiper/css/navigation";
 
 
 import { Autoplay, Pagination, Navigation } from "swiper";
+import MoreButton from '../../../Components/MoreButton/MoreButton';
 
 
 const Testimonial = () => {
@@ -27,7 +26,7 @@ const Testimonial = () => {
             <div className='h-full w-full px-2 md:px-10 py-16  top-0 md:flex justify-around items-center  '>
                 <div className='w-full md:w-1/2  '>
                     <img src={quotaion} className=' mt-4 md:mt-48 block mx-auto' alt="" />
-                    <Link to='/' className='flex items-center justify-center pt-24 text-[#FF5B00] text-lg font-bold'><span className='px-4'>Read All Testimonials</span> <FaAngleDoubleRight></FaAngleDoubleRight></Link>
+                    <MoreButton content='Read All Testimonials' path='/'></MoreButton>
                 </div>
                 <div className='w-full md:w-1/2'>
                     <div className='text-center md:w-[500px] mx-auto mt-60 md:mt-2  '>
@@ -40,7 +39,7 @@ const Testimonial = () => {
                                 spaceBetween={30}
                                 centeredSlides={true}
                                 autoplay={{
-                                    delay: 1500,
+                                    delay: 2500,
                                     disableOnInteraction: false,
                                 }} 
                                 pagination={{

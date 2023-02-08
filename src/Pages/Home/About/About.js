@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import about from '../../../Assets/images/about.png';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
-import { FaAngleDoubleRight, FaAngleRight } from 'react-icons/fa';
 import './About.css'
+import MoreButton from '../../../Components/MoreButton/MoreButton';
 
 
 const About = () => {
@@ -15,7 +14,7 @@ const About = () => {
             <div className='h-full w-full px-2 md:px-10 py-10 top-0 md:flex justify-around items-center  '>
                 <div className='w-full md:w-1/2  '>
                     <img src={about} className=' mt-4 md:mt-48 block mx-auto' alt="" />
-                    <Link to='/' className='flex items-center justify-center pt-24 text-[#FF5B00] text-lg font-bold'><span className='px-4'>Learn More</span> <FaAngleDoubleRight></FaAngleDoubleRight> </Link>
+                    <MoreButton content='Learn More' path='/'></MoreButton>
                 </div>
                 <div className='w-full md:w-1/2'>
                     <div className='text-center md:w-[500px] mx-auto mt-60 md:mt-2  '>

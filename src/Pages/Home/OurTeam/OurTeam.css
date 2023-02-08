@@ -1,0 +1,15 @@
+.our-team-shadow-left {
+    position: absolute;
+    width: 1135px;
+    height: 1114px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 91, 0, 0.4) 0%, rgba(255, 91, 0, 0) 100%);
+}
+
+.our-team-shadow-right {
+    position: absolute;
+    width: 1135px;
+    height: 1114px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 200, 151, 0.4) 0%, rgba(255, 91, 0, 0) 100%);
+}
