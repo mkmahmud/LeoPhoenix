@@ -1,6 +1,7 @@
 import React from 'react';
 import Shapes from '../../Components/Shapes/Shapes';
 import About from './About/About';
+import Awards from './Awards/Awards';
 import Hero from './Hero/Hero';
 import Services from './Services/Services';
 import Testimonial from './Testimonial/Testimonial';
@@ -14,6 +15,7 @@ const Home = () => {
             <About></About>
             <WhyChooseUs></WhyChooseUs>
             <Testimonial></Testimonial>
+            <Awards></Awards>
         </div>
     );
 };
