@@ -3,7 +3,19 @@ import { Link } from 'react-router-dom';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 import quotaion from '../../../Assets/icons/Quotations.png';
 import { FaAngleDoubleRight, FaAngleRight } from 'react-icons/fa';
-import './Testimonial.css'
+import './Testimonial.css';
+import profile from '../../../Assets/icons/profile.png';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import 'swiper/css/pagination';
+import "swiper/css/navigation";
+
+
+import { Autoplay, Pagination, Navigation } from "swiper";
+
 
 const Testimonial = () => {
     return (
@@ -15,30 +27,54 @@ const Testimonial = () => {
             <div className='h-full w-full px-2 md:px-10 py-16  top-0 md:flex justify-around items-center  '>
                 <div className='w-full md:w-1/2  '>
                     <img src={quotaion} className=' mt-4 md:mt-48 block mx-auto' alt="" />
-                    <Link to='/' className='flex items-center justify-center pt-24 text-[#FF5B00] text-lg font-bold'><span className='px-4'>React All Testimonials</span> <FaAngleDoubleRight></FaAngleDoubleRight></Link>
+                    <Link to='/' className='flex items-center justify-center pt-24 text-[#FF5B00] text-lg font-bold'><span className='px-4'>Read All Testimonials</span> <FaAngleDoubleRight></FaAngleDoubleRight></Link>
                 </div>
                 <div className='w-full md:w-1/2'>
                     <div className='text-center md:w-[500px] mx-auto mt-60 md:mt-2  '>
                         <div className='mt-24'>
                             <SectionTitle content='Testimonials'></SectionTitle>
                         </div>
-                        <h2 className='text-3xl text-left font-bold mb-10 '>
-                            We assist companies in developing innovative digital goods and experiences.
-                        </h2>
-                        <p className='text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <div className='flex justify-around my-16'>
-                            <div>
-                                <h2 className='text-3xl font-bold py-2 px-4 border-b-2 border-[#FF5B00] '>500 <span className='text-[#FF5B00]'>+</span></h2>
-                                <p className='py-4 font-bold'>Website User</p>
-                            </div>
-                            <div>
-                                <h2 className='text-3xl font-bold py-2 px-4 border-b-2 border-[#FF5B00] '>500 <span className='text-[#FF5B00]'>+</span></h2>
-                                <p className='py-4 font-bold'>Website User</p>
-                            </div>
-                            <div>
-                                <h2 className='text-3xl font-bold py-2 px-4 border-b-2 border-[#FF5B00] '>500 <span className='text-[#FF5B00]'>+</span></h2>
-                                <p className='py-4 font-bold'>Website User</p>
-                            </div>
+                        <div>
+
+                            <Swiper
+                                spaceBetween={30}
+                                centeredSlides={true}
+                                autoplay={{
+                                    delay: 1500,
+                                    disableOnInteraction: false,
+                                }} 
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Autoplay, Pagination, Navigation]}
+                                className="mySwiper"
+
+                            >
+                                <SwiperSlide>
+                                    <div>
+                                        <img className='h-16 w-16 rounded-full block mx-auto' src={profile} alt="" />
+                                        <h2 className='text-lg font-bold py-4'>Jhon C - Product Manager</h2>
+                                        <p className='py-4'>Twister design</p>
+                                        <p className='py-4'>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni possimus, autem natus mollitia neque reprehenderit nemo totam eum? Inventore dolor saepe dolorem dignissimos hic, quod ab voluptas suscipit quae! Nisi?"</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div>
+                                        <img className='h-16 w-16 rounded-full block mx-auto' src={profile} alt="" />
+                                        <h2 className='text-lg font-bold py-4'>Jhon C - Product Manager</h2>
+                                        <p className='py-4'>Twister design</p>
+                                        <p className='py-4'>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni possimus, autem natus mollitia neque reprehenderit nemo totam eum? Inventore dolor saepe dolorem dignissimos hic, quod ab voluptas suscipit quae! Nisi?"</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div>
+                                        <img className='h-16 w-16 rounded-full block mx-auto' src={profile} alt="" />
+                                        <h2 className='text-lg font-bold py-4'>Jhon C - Product Manager</h2>
+                                        <p className='py-4'>Twister design</p>
+                                        <p className='py-4'>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni possimus, autem natus mollitia neque reprehenderit nemo totam eum? Inventore dolor saepe dolorem dignissimos hic, quod ab voluptas suscipit quae! Nisi?"</p>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                     </div>
                 </div>

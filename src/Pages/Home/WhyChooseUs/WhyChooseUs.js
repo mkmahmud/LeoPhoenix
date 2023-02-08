@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
     ]
 
     return (
-        <div className='h-full md:h-screen md:my-0 relative  py-24 md:py-0 -mt-[200px] md:mt-0 ' >
+        <div className='h-full md:h-screen md:my-0 relative  py-24 md:py-0 -mt-[200px] md:mt-0  z-10' >
             
             <img src={secBg} className='absolute hidden md:block -z-10 h-full w-full' alt="" />
             <img src={secBgMobile} className='absolute block md:hidden -z-10 h-full w-full' alt="" />
