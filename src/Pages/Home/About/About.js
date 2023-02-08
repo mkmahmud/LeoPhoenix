@@ -1,13 +1,13 @@
 import React from 'react';
-import './Shapes.css';
-import about from '../../Assets/images/about.png'
-import SectionTitle from '../SectionTitle/SectionTitle';
 import { Link } from 'react-router-dom';
-import { FaAngleRight } from 'react-icons/fa';
+import about from '../../../Assets/images/about.png';
+import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
+import { FaAngleDoubleRight, FaAngleRight } from 'react-icons/fa';
+import './About.css'
 
-const Shapes = () => {
+
+const About = () => {
     return (
-       
         <div className='relative my-24'>
             <div className='about-shadow-left rounded-full -top-[300px] md:-top-[100px] -left-[200px]'></div>
             <div className='about-shadow-right rounded-full -bottom-[300px] -right-[300px]  md:-right-[250px]'></div>
@@ -15,7 +15,7 @@ const Shapes = () => {
             <div className='h-full w-full px-2 md:px-10 py-10 top-0 md:flex justify-around items-center  '>
                 <div className='w-full md:w-1/2  '>
                     <img src={about} className=' mt-4 md:mt-48 block mx-auto' alt="" />
-                    <Link to='/' className='flex items-center justify-center pt-24 text-[#FF5B00] text-lg font-bold'><span className='px-4'>Learn More</span> <FaAngleRight></FaAngleRight> </Link>
+                    <Link to='/' className='flex items-center justify-center pt-24 text-[#FF5B00] text-lg font-bold'><span className='px-4'>Learn More</span> <FaAngleDoubleRight></FaAngleDoubleRight> </Link>
                 </div>
                 <div className='w-full md:w-1/2'>
                     <div className='text-center md:w-[500px] mx-auto mt-60 md:mt-2  '>
@@ -47,4 +47,4 @@ const Shapes = () => {
     );
 };
 
-export default Shapes;
+export default About;
