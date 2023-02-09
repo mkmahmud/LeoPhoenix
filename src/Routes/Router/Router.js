@@ -7,6 +7,7 @@ import Main from '../../Layouts/Main/Main';
 import About from '../../Pages/About/About';
 import Home from '../../Pages/Home/Home';
 import Services from '../../Pages/Services/Services';
+import Teams from '../../Pages/Teams/Teams';
 
 const Router = () => {
 
@@ -26,6 +27,10 @@ const Router = () => {
                 {
                     path:'/services',
                     element:<Services></Services>
+                },
+                {
+                    path:'teams',
+                    element:<Teams></Teams>
                 }
             ]
         }

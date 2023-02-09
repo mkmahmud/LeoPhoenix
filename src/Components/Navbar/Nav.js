@@ -49,7 +49,7 @@ const Nav = () => {
           <li> <Link to='/'>Home</Link></li>
           <li> <Link to='/about'>About</Link></li>
           <li> <Link to='/services'>Services</Link></li>
-          <li> <Link to='#'>Teams</Link></li>
+          <li> <Link to='/teams'>Teams</Link></li>
           <li> <Link to='#'>Blog</Link></li>
           <li> <Link to='#'>Testimonial</Link></li>
           <li> <Link to='#'><MainButton content='Contact'></MainButton></Link></li>
