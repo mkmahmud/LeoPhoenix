@@ -11,20 +11,21 @@
 }
 
 
-.about-shadow-left {
+.about-page-shadow-left {
+
+    position: absolute;
+    width: 1218px;
+    height: 1218px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 91, 0, 0.4) 0%, rgba(153, 228, 205, 0.4) 100%);
+}
+
+
+.about-page-shadow-right {
     position: absolute;
     width: 1106px;
     height: 1068px;
     left: -220px;
     z-index: -1;
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 200, 151, 0.4) 0%, rgba(255, 91, 0, 0) 100%);
-}
 
-
-.about-shadow-right {
-    position: absolute;
-    width: 1135px;
-    height: 1114px;
-    z-index: -1;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 91, 0, 0.4) 0%, rgba(153, 228, 205, 0.4) 100%);
 }

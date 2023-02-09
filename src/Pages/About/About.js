@@ -1,20 +1,17 @@
 import React from 'react';
-import Awards from '../../Components/Awards/Awards';
 import GetStarted from '../../Components/GetStarted/GetStarted';
 import OurTeam from '../../Components/OurTeam/OurTeam';
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import WhyChooseUs from '../../Components/WhyChooseUs.js/WhyChooseUs';
-import About from './About/About';
-import Hero from './Hero/Hero';
-import Services from './Services/Services';
+import AboutContent from './AboutContent/AboutContent';
+import AboutHero from './AboutHero/AboutHero';
+import Awards from './Awards/Awards';
 
-
-const Home = () => {
+const About = () => {
     return (
-        <div className='w-full relative '>
-            <Hero></Hero>
-            <Services></Services>
-            <About></About>
+        <div>
+            <AboutHero></AboutHero>
+            <AboutContent></AboutContent>
             <WhyChooseUs></WhyChooseUs>
             <Testimonial></Testimonial>
             <Awards></Awards>
@@ -24,4 +21,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default About;

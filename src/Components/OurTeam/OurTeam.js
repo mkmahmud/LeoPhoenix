@@ -1,8 +1,8 @@
 import React from 'react';
-import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
-import teamProfile from '../../../Assets/team/1.png'
+import MoreButton from '../MoreButton/MoreButton';
+import SectionTitle from '../SectionTitle/SectionTitle';
+import teamProfile from '../../Assets/team/1.png';
 import './OurTeam.css'
-import MoreButton from '../../../Components/MoreButton/MoreButton';
 
 const OurTeam = () => {
     return (
