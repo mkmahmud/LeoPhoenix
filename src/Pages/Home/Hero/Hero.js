@@ -22,7 +22,7 @@ const Hero = () => {
                 <h2 className='text-3xl font-bold md:py-4'>Grow Your <br /> Buisness To The <br /> Peak.</h2>
                 <p className='leading-none md:my-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <div className='my-6'>
-                    <MainButton content='Learn More'></MainButton>
+                    <MainButton path='/' content='Learn More'></MainButton>
                     <SecondButton content='Contact Us'></SecondButton>
                 </div>
             </div>
