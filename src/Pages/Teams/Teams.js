@@ -8,9 +8,6 @@ const Teams = () => {
         <div>
             <Hero content='Our Teams'></Hero>
             <TeamsContent></TeamsContent>
-            <div>
-                
-            </div>
         </div>
     );
 };

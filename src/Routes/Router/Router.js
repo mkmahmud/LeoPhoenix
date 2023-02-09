@@ -8,6 +8,7 @@ import About from '../../Pages/About/About';
 import Home from '../../Pages/Home/Home';
 import Services from '../../Pages/Services/Services';
 import Teams from '../../Pages/Teams/Teams';
+import Testimonial from '../../Pages/Testimonial/Testimonial';
 
 const Router = () => {
 
@@ -29,8 +30,12 @@ const Router = () => {
                     element:<Services></Services>
                 },
                 {
-                    path:'teams',
+                    path:'/teams',
                     element:<Teams></Teams>
+                },
+                {
+                    path:'/testimonial',
+                    element: <Testimonial></Testimonial>
                 }
             ]
         }
