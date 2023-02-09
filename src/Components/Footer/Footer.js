@@ -6,6 +6,7 @@ import logo from '../../Assets/logo.png'
 const Footer = () => {
     return (
         <div className='bg-white py-10 px-2 md:px-10 text-left md:flex'>
+         
             <div className='my-10 md:my-2 w-full md:w-1/3'>
                 <div className='flex items-center'>
                     <img src={logo} alt="" className='' />

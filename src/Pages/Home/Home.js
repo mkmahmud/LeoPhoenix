@@ -1,6 +1,5 @@
 import React from 'react';
 import Awards from '../../Components/Awards/Awards';
-import GetStarted from '../../Components/GetStarted/GetStarted';
 import OurTeam from '../../Components/OurTeam/OurTeam';
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import WhyChooseUs from '../../Components/WhyChooseUs.js/WhyChooseUs';
@@ -19,7 +18,6 @@ const Home = () => {
             <Testimonial></Testimonial>
             <Awards></Awards>
             <OurTeam></OurTeam>
-            <GetStarted></GetStarted>
         </div>
     );
 };

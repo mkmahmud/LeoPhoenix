@@ -1,22 +1,23 @@
 import React from 'react';
-import GetStarted from '../../Components/GetStarted/GetStarted';
+import Hero from '../../Components/Hero/Hero';
 import OurTeam from '../../Components/OurTeam/OurTeam';
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import WhyChooseUs from '../../Components/WhyChooseUs.js/WhyChooseUs';
 import AboutContent from './AboutContent/AboutContent';
-import AboutHero from './AboutHero/AboutHero';
+
 import Awards from './Awards/Awards';
+import OurClient from './OurClient/OurClient';
 
 const About = () => {
     return (
         <div>
-            <AboutHero></AboutHero>
+            <Hero content='About Us'></Hero>
             <AboutContent></AboutContent>
             <WhyChooseUs></WhyChooseUs>
             <Testimonial></Testimonial>
             <Awards></Awards>
             <OurTeam></OurTeam>
-            <GetStarted></GetStarted>
+            <OurClient></OurClient>
         </div>
     );
 };
