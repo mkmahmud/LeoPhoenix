@@ -2,3 +2,16 @@
     height: 10%;
     width: 10%;
  }
+ 
+
+ .why-choose-us::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-image: url('../../Assets/svg/why-choose-bg.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
+} 

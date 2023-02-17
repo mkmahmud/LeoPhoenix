@@ -1,0 +1,11 @@
+.getstarted::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-image: url('../../Assets/svg/getstarted.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
+  }

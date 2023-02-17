@@ -1,64 +1,57 @@
-.left-outter-shadow {
-    box-shadow: 0px 0px 400px 300px #ffc4a3;
-}
-
-.left-inner-shadow {
-    box-shadow: 0px 0px 200px 150px #00C897;
-}
-
-
-
-
-.shadow-right-inner {
-    box-shadow: 0px 0px 400px 300px #ffc4a3;
+.testimonial-component-shadow-left {
+  position: absolute;
+  width: 1135px;
+  height: 1114px;
+  left: -200px;
+  top: -200px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 43.09% 58.26%, rgba(0, 200, 151, 0.4) 0%, rgba(255, 91, 0, 0) 100%);
 }
 
 
-.testimonial-shadow-left {
-    position: absolute;
-    width: 1106px;
-    height: 1068px;
-    left: -220px;
-    z-index: -1;
-    background: radial-gradient(50% 50% at 43.09% 58.26%, rgba(0, 200, 151, 0.2) 0%, rgba(255, 91, 0, 0) 100%);
-}
-
-
-.testimonial-shadow-right {
-    position: absolute;
-    width: 1135px;
-    height: 1114px;
-    z-index: -1;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 91, 0, 0.4) 0%, rgba(153, 228, 205, 0.4) 100%);
+.testimonial-component-shadow-right {
+  position: absolute;
+  width: 1077px;
+  height: 1114px;
+  right: -300px;
+  top: -100px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 91, 0, 0.4) 0%, rgba(153, 228, 205, 0.4) 100%);
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 50px;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 16px;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 70px !important;
-    height: 70px !important;
-    object-fit: cover;
-  }
-  
-  .circle-custom {
-    @apply mx-auto -mt-[30px]  h-64 w-64 border border-[3px] rounded-full overflow-hidden flex items-center justify-center;
-  }
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
 
-  .circle-custom-mobile{
-    @apply mx-auto my-10 h-64 w-64 border border-[3px] rounded-full overflow-hidden flex items-center justify-center;
-  }
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 70px !important;
+  height: 70px !important;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background-color: #FF5B00;
+  height: 15px;
+  width: 15px;
+}
+
+.circle-custom {
+  @apply mx-auto -mt-[30px] h-64 w-64 border border-[3px] rounded-full overflow-hidden flex items-center justify-center;
+}
+
+.circle-custom-mobile {
+  @apply mx-auto my-10 h-64 w-64 border border-[3px] rounded-full overflow-hidden flex items-center justify-center;
+}

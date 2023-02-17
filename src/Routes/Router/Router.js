@@ -10,6 +10,7 @@ import Home from '../../Pages/Home/Home';
 import Services from '../../Pages/Services/Services';
 import Teams from '../../Pages/Teams/Teams';
 import Testimonial from '../../Pages/Testimonial/Testimonial';
+import Test from '../../Pages/Tests/Test';
 
 const Router = () => {
 
@@ -43,6 +44,10 @@ const Router = () => {
                     element: <Contact></Contact>
                 }
             ]
+        },
+        {
+            path:'/tests',
+            element:<Test></Test>
         }
     ])
 
