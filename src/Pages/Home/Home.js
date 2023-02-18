@@ -3,6 +3,7 @@ import Awards from '../../Components/Awards/Awards';
 import OurTeam from '../../Components/OurTeam/OurTeam';
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import WhyChooseUs from '../../Components/WhyChooseUs.js/WhyChooseUs';
+import { ScrollToTopOnMount } from '../../Helpers/ScrollToTop';
 import About from './About/About';
 import Hero from './Hero/Hero';
 import Services from './Services/Services';
@@ -18,6 +19,7 @@ const Home = () => {
             <Testimonial></Testimonial>
             <Awards></Awards> 
             <OurTeam></OurTeam>
+            <ScrollToTopOnMount></ScrollToTopOnMount>
         </div>
     );
 };

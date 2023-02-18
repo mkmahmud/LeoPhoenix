@@ -39,7 +39,8 @@ const WhyChooseUs = () => {
     ]
 
     return (
-        <div className=' why-choose-us relative h-[1370px] overflow-hidden z-10 -mt-[100px]'>
+        <div className=' why-choose-us relative h-[1370px] relative overflow-hidden z-10 -mt-[100px]'>
+            <div className='why-choose-us-shadow-background absolute -bottom-[500px] -left-[100px] -z-10'></div>
             <div className='mt-[250px]'>
                 <SectionTitle content='Why Choose Us ?'></SectionTitle>
                 <p className='mx-auto w-full pt-[56px] pb-[37px] px-4 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua. </p>

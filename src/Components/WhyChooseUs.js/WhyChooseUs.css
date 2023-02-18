@@ -15,3 +15,11 @@
     background-repeat: no-repeat;
     z-index: -1;
 } 
+/* 
+.why-choose-us-shadow-background{
+    position: absolute;
+width: 1135px;
+height: 1114px;
+
+background: radial-gradient(50% 50% at 50% 50%, rgba(255, 91, 0, 0.4) 0%, rgba(255, 91, 0, 0) 100%);
+} */

@@ -1,8 +1,11 @@
 import React from 'react';
 import {
     createBrowserRouter,
-    RouterProvider
-} from 'react-router-dom'
+    createRoutesFromElements,
+    Route,
+    RouterProvider,
+} from "react-router-dom";
+
 import Main from '../../Layouts/Main/Main';
 import About from '../../Pages/About/About';
 import Contact from '../../Pages/Contact/Contact';
@@ -12,44 +15,47 @@ import Teams from '../../Pages/Teams/Teams';
 import Testimonial from '../../Pages/Testimonial/Testimonial';
 import Test from '../../Pages/Tests/Test';
 
-const Router = () => {
+const MyRouter = () => {
 
-    const router = createBrowserRouter([
-        {
-            path:'/',
-            element: <Main></Main>,
-            children:[
-                {
-                    path:'/',
-                    element:<Home></Home>
-                },
-                {
-                    path:'/about',
-                    element:<About></About>
-                },
-                {
-                    path:'/services',
-                    element:<Services></Services>
-                },
-                {
-                    path:'/teams',
-                    element:<Teams></Teams>
-                },
-                {
-                    path:'/testimonial',
-                    element: <Testimonial></Testimonial>
-                },
-                {
-                    path:'/contact',
-                    element: <Contact></Contact>
-                }
-            ]
-        },
-        {
-            path:'/tests',
-            element:<Test></Test>
-        }
-    ])
+    const router = createBrowserRouter(
+        [
+            {
+                path: '/',
+                element: <Main></Main>,
+                children: [
+                    {
+                        path: '/',
+                        element: <Home>  </Home>
+                    },
+                    {
+                        path: '/about',
+                        element: <About></About>
+                    },
+                    {
+                        path: '/services',
+                        element: <Services></Services>
+                    },
+                    {
+                        path: '/teams',
+                        element: <Teams></Teams>
+                    },
+                    {
+                        path: '/testimonial',
+                        element: <Testimonial></Testimonial>
+                    },
+                    {
+                        path: '/contact',
+                        element: <Contact></Contact>
+                    }
+                ]
+            },
+            {
+                path: '/tests',
+                element: <Test></Test>
+            }
+        ])
+
+
 
     return (
         <RouterProvider router={router}>
@@ -58,4 +64,4 @@ const Router = () => {
     );
 };
 
-export default Router;
+export default MyRouter;
