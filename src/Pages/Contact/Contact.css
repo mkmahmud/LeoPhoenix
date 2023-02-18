@@ -1,0 +1,7 @@
+.contact-bottom-backgound {
+    position: absolute;
+    width: 1141px;
+    height: 1127px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 91, 0, 0.4) 0%, rgba(153, 228, 205, 0.4) 100%);
+}

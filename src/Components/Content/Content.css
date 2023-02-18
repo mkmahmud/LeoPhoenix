@@ -1,4 +1,4 @@
-.team-page-shadow-left {
+.content-page-shadow-left {
 
     position: absolute;
     width: 1218px;
@@ -8,7 +8,7 @@
 }
 
 
-.teams-shadow-right {
+.content-shadow-right {
     position: absolute;
     width: 800px;
     height: 800px;

@@ -27,3 +27,11 @@ code {
     monospace;
 }
 
+
+.background-shadow {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 91, 0, 0.4) 0%, rgba(255, 91, 0, 0) 100%);
+  position: absolute;
+  width: 1135px;
+  height: 1114px;
+  transform: translate(-50%, -50%);
+}

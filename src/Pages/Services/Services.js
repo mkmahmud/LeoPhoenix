@@ -12,10 +12,13 @@ const Services = () => {
             <ScrollToTopOnMount></ScrollToTopOnMount>
             <Hero content='Our Services'></Hero>
             <ServicesContent></ServicesContent>
-            <Testimonial></Testimonial>
+            <div className='py-[200px]'>
+                <Testimonial></Testimonial>
+            </div>
             <OurClient></OurClient>
-            <div className='relative mt-[-300px] z-20 md:pb-32'>
+            <div className='relative mt-[-300px] z-30 md:pb-32'>
                 <Awards></Awards>
+                
             </div>
         </div>
     );
